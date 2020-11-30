@@ -1,0 +1,200 @@
+body {
+    background-color: #eceff1;
+    font-family: 'Roboto', sans-serif;
+}
+
+.page {
+    box-sizing: border-box;
+    width: 95%;
+    max-width: 1000px;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    font-weight: 300;
+}
+
+.page__wrapper {
+    border: 15px solid #00695c;
+}
+
+.page:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #fafafa;
+}
+
+.header__image {
+    margin-right: 50px;
+    border-radius: 50%;
+}
+
+.header__title {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.header__text {
+    font-size: 20px;
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.main__wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.main__whole {
+    align-self: center;
+    text-align: center;
+}
+
+.main__part {
+    width: 45%;
+    padding: 0 15px;
+}
+
+.projects-list {
+    display: none;
+}
+
+.table {
+    border-collapse: collapse;
+}
+
+.table__title {
+    padding: 10px;
+    text-align: center;
+    background-color: #e0f2f1;
+    border: 2px solid #00695c;
+}
+
+.table__info {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #e5e5e5;
+}
+
+tr:nth-child(2n + 1) {
+    background-color: #fafafa;
+}
+
+td {
+    text-align: left;
+}
+
+a {
+    font-weight: 500;
+    color: #00695c;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 1px solid #00695c;
+}
+
+ul {
+    padding: 10px;
+}
+
+li {
+    margin-bottom: 7px;
+}
+
+@media (max-width: 767px) {
+    .main__wrapper--mobile {
+        flex-direction: column;
+    }
+
+    .main__wrapper--mobile h2 {
+        text-align: center;
+    }
+
+    .main__wrapper--mobile .main__part {
+        width: 95%;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 640px) {
+    .header__image {
+        width: 150px;
+        margin-right: 20px;
+    }
+
+    .header__title {
+        font-size: 20px;
+    }
+
+    .header__text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 450px) {
+    .page {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .main__whole {
+        align-self: flex-start;
+        width: 100%;
+    }
+
+    .main__whole h2 {
+        text-align: center;
+    }
+
+    .projects-list {
+        display: block;
+        padding: 0 15px;
+        width: 95%;
+        text-align: left;
+    }
+
+    .table {
+        display: none;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    .main__wrapper {
+        flex-direction: column;
+    }
+
+    .main__wrapper h2 {
+        text-align: center;
+    }
+
+    .main__part {
+        width: 95%;
+        padding: 0 15px;
+    }
+
+    .header__image {
+        display: none;
+    }
+
+    .header__info {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
