@@ -45,6 +45,11 @@ Always take my work seriously and apply all my knowledge to create quality produ
 * 2019–2020 - HTML Academy, Frontend-developer courses
 * 2009–2014 - Kuban State University, Technology of Public Catering Products, Engineer
 
+### EXPERIENCE:
+
+* Present - Russian Robotics Group, frontend developer
+* 2021–2022 - ART6, frontend developer
+
 ### LANGUAGE:
 
 * English - Intermediate
